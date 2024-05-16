@@ -1,12 +1,14 @@
-# Microservice
+package com.manvendra.accounts.entity;
 
 
+import jakarta.persistence.Column;
+import jakarta.persistence.MappedSuperclass;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
+import java.time.LocalDateTime;
 
-#### BaseEntity Class:
-<p style="color:#999">It contains the common field which we want in all the Entity classes</p>
-
-```Java
 @MappedSuperclass
 @Setter
 @Getter
@@ -25,4 +27,3 @@ public class BaseEntity {
     @Column(insertable = false)
     private String updatedBy;
 }
-```
